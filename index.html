@@ -3,159 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicole Sebastian | Portfolio</title>
+    <title>Sophia Nicole Sebastian | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <header class="navbar">
-        <div class="logo">• Portfolio</div>
+        <div class="logo">
+            <i class="fas fa-circle"></i> Portfolio
+        </div>
         <nav class="nav-menu">
-            <a href="#about">ABOUT</a>
-            <a href="#tech-stack">TECH STACK</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#trainings">TRAININGS</a>
-            <a href="#contact">CONTACT</a>
+            <a href="#about"><i class="fas fa-user"></i> ABOUT</a>
+            <a href="#tech-stack"><i class="fas fa-code"></i> TECH STACK</a>
+            <a href="#projects"><i class="fas fa-project-diagram"></i> PROJECTS</a>
+            <a href="#trainings"><i class="fas fa-graduation-cap"></i> TRAININGS</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> CONTACT</a>
         </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="assets/img/<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicole Sebastian | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <header class="navbar">
-        <div class="logo">• Portfolio</div>
-        <nav class="nav-menu">
-            <a href="#about">ABOUT</a>
-            <a href="#tech-stack">TECH STACK</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#trainings">TRAININGS</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="assets/img/nicole-sebastian-portfolio/658457151_2751816755164800_1233183943469709721_n.jpg" alt="Profile Photo" class="profile-img">
-        <h1>Sophia<span>Nicole</span></h1>
-        <p class="motto">NEVER STOP TRYING</p>
-        <p class="tagline">Coding? Yeah, I'll figure it out.</p>
-        <p class="role">IT Student </p>
-        <div class="hero-buttons">
-            <button onclick="scrollToSection('projects')">View My Projects</button>
-            <button onclick="scrollToSection('contact')">Connect With Me</button>
+        <div class="hero-content">
+            <div class="profile-img-container">
+                <img src="image.jpg" 
+                alt="Sophia Nicole - Profile Photo" 
+                width="200"
+                height="200"
+                loading="lazy"
+                style="max-width: 100%; height: auto; border-radius: 50%;"
+                <div class="profile-ring"></div>
+            </div>
+            <h1>Sophia<span>Nicole</span></h1>
+            <p class="motto">NEVER STOP TRYING</p>
+            <p class="tagline">Coding? Yeah, I'll figure it out.</p>
+            <p class="role">IT Student & Future Tech Innovator</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('projects')">
+                    <i class="fas fa-eye"></i> View My Projects
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">
+                    <i class="fas fa-paper-plane"></i> Connect With Me
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section about">
-        <h2>About Me</h2>
-        <p>I’m Sophia Nicole Sebastian,’m in IT, and honestly? 
-            Some days feel like I’m fighting with code that just won’t 
-            cooperate, or tackling problems that make my head spin. 
-            But even when it gets tough and I feel like I’m barely keeping up, 
-            I keep pushing through. Yeah it’s hard really hard sometimes
-            but I’m trying my absolute best to make it work. Because even if I stumble a bunch,
-            I know every little win counts.</p>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm Sophia Nicole Sebastian, an IT student who's passionate about turning challenges into opportunities. Some days feel like I'm wrestling with stubborn code or untangling complex problems that make my head spin. But even when it's tough and I feel like I'm barely keeping up, I keep pushing forward.</p>
+                <p>Yeah, it's really hard sometimes, but I'm giving it my absolute best. Every stumble teaches me something new, and every small win reminds me why I love this journey. I'm here to build, create, and grow—one line of code at a time.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Tech Stack Section -->
     <section id="tech-stack" class="section tech-stack">
-        <h2>Tech Stack</h2>
-        <div class="stack-grid">
-            <div class="stack-card">
-                <h3>Frontend</h3>
-                <div class="tag">HTML</div>
-                <div class="tag">CSS</div>
-                <div class="tag">Bootstrap</div>
-            </div>
-            <div class="stack-card">
-                <h3>Backend</h3>
-                <div class="tag">Java</div>
-                <div class="tag">C#</div>
-            </div>
-            <div class="stack-card">
-                <h3>Tools</h3>
-                <div class="tag">GitHub</div>
-                <div class="tag">VS Code</div>
-                <div class="tag">Figma</div>
-                <div class="tag">NetBeans</div>
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-card">
+                    <div class="stack-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Frontend</h3>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <div class="stack-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend</h3>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">C#</span>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <div class="stack-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools</h3>
+                    <div class="tags">
+                        <span class="tag">GitHub</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">NetBeans</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Music App</h3>
-                <p>Our Java-built music app is super straightforward to use – it lets you do all the things you’d want from a music player. You can browse through your songs, play your favorite tracks in MP3 or WAV format, and make custom playlists whenever you want. It’s easy to find exactly what you’re looking for by searching for title, artist, or album, plus you get all the basic controls like play, pause, skip, and shuffle.</p>
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Music App</h3>
+                        <div class="project-tech">
+                            <span class="tag small">Java</span>
+                        </div>
+                    </div>
+                    <p>A clean, intuitive Java-built music player that handles MP3 & WAV files. Features song browsing, custom playlists, search by title/artist/album, and full playback controls (play, pause, skip, shuffle).</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-link"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Coming Soon...</h3>
+                        <div class="project-tech">
+                            <span class="tag small">Multiple</span>
+                        </div>
+                    </div>
+                    <p>More exciting projects in development. Stay tuned!</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Trainings Section -->
     <section id="trainings" class="section trainings">
-        <h2>Webinars • Trainings • Certifications</h2>
-        <div class="trainings-grid">
-            <div class="training-card">
-                <h3>Java Fundamentals</h3>
-                <p>Oracle Academy</p>
+        <div class="container">
+            <h2 class="section-title">Trainings & Certifications</h2>
+            <div class="trainings-grid">
+                <div class="training-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Java Fundamentals</h3>
+                    <p>Oracle Academy</p>
+                </div>
+                <div class="training-card">
+                    <i class="fas fa-sitemap"></i>
+                    <h3>SAP S/4HANA</h3>
+                    <p>SD, MM, FI, CO modules - Global Bike simulation</p>
+                </div>
+                <div class="training-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity Essentials</h3>
+                    <p>Cisco Networking Academy</p>
+                </div>
+                <div class="training-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Digital Skills</h3>
+                    <p>STI College Manila</p>
+                </div>
             </div>
-            <div class="training-card">
-                <h3>SAP S/4HANA</h3>
-                <p>Certificate of Participation for completing SD,MM,FI and CO modules of S/4HANA using Global Bike simulation</p>
-            </div>
-            <div class="training-card">
-                <h3>Digital Skills & Cybersecurity</h3>
-                <p>STI College Manila</p>
-            </div>
-            <div class="training-card">
-                <h3>Cybersecurity Essentials</h3>
-                <p>Cisco Networking Academy</p>
-            </div>
-        </div>
-        <div class="affiliations">
-            <h2>Affiliations</h2>
-            <div class="affiliation-card">
-                <h3>TechCore Student Org</h3>
-                <p>Official IT student organization of STI College Manila—focused on building technical skills, teamwork, and innovation in tech.</p>
+            
+            <div class="affiliations">
+                <h2 class="section-title">Affiliations</h2>
+                <div class="affiliation-card">
+                    <i class="fas fa-users"></i>
+                    <h3>TechCore Student Org</h3>
+                    <p>Official IT student organization of STI College Manila—building technical skills, teamwork, and innovation.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
-        <h2>Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message..." rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div class="contact-links">
-            <p>nicolesebastian576@gmail.com</p>
-            <p>
-                <a href="https://www.linkedin.com/in/sophia-nicole-b-sebastian-5053403ba/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                .
-                <a href="https://www.facebook.com/nicole.sebastian.714049" target="_blank" rel="noopener noreferrer">Facebook</a>
-            </p>
-           //p>LinkedIn • Facebook</p>
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell me about your project or just say hi..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+            <div class="contact-links">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>nicolesebastian576@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sophia-nicole-b-sebastian-5053403ba/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/nicole.sebastian.714049" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Powered by coffee and creativity.</p>
+        <div class="container">
+            <p>&copy; 2024 Sophia Nicole Sebastian. Powered by coffee ☕ and creativity ✨</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
